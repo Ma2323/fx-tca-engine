@@ -32,6 +32,12 @@ The analytical dashboard, built with Streamlit and Plotly, allows users to filte
 *   **Analytics & Frontend:** Plotly, Streamlit
 *   **Architecture:** Multi-threaded data ingestion, ACID-compliant local storage, responsive web framework.
 
+## Data Methodology
+
+Please note that the trade execution data utilized in this repository is entirely synthetic. To demonstrate the analytical capabilities of the TCA engine without exposing proprietary or licensed financial data, I engineered a Python script (`generate_data.py`) to simulate high-frequency institutional FX order flow. 
+
+This simulation accurately models real-world execution variables, including adverse price selection, variable counterparty latency, and realistic fill/rejection ratios. The underlying SQL ingestion pipeline and analytical architecture are fully functional and can be instantly mapped to a live FIX protocol or REST API data feed for production use.
+
 ## 🚀 Quickstart & Testing Guide
 
 ### 1. Live Interactive Demo
