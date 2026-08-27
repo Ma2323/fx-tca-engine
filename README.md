@@ -36,7 +36,7 @@ The analytical dashboard, built with Streamlit and Plotly, allows users to filte
 
 ### 1. Live Interactive Demo
 To immediately evaluate the execution quality metrics, slippage calculations, and dashboard functionality without setting up a local environment, please access the live application here:
-**[Launch FX TCA Engine Dashboard](insert-your-streamlit-cloud-link-here)**
+**[Launch FX TCA Engine Dashboard](https://fx-tca-engine-pe5cftybjhs6qre6rckxjz.streamlit.app/)**
 
 ### 2. Local Technical Review
 If you wish to review the underlying Python data pipeline architecture and test the SQL ingestion engine locally, please follow these steps. 
