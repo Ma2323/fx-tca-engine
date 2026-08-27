@@ -32,9 +32,28 @@ The analytical dashboard, built with Streamlit and Plotly, allows users to filte
 *   **Analytics & Frontend:** Plotly, Streamlit
 *   **Architecture:** Multi-threaded data ingestion, ACID-compliant local storage, responsive web framework.
 
-## Quickstart Guide
+## 🚀 Quickstart & Testing Guide
 
-1. Clone the repository to your local machine:
-   ```bash
-   git clone [https://github.com/your-username/fx-tca-engine.git](https://github.com/your-username/fx-tca-engine.git)
-   cd fx-tca-engine
+### 1. Live Interactive Demo
+To immediately evaluate the execution quality metrics, slippage calculations, and dashboard functionality without setting up a local environment, please access the live application here:
+**[Launch FX TCA Engine Dashboard](insert-your-streamlit-cloud-link-here)**
+
+### 2. Local Technical Review
+If you wish to review the underlying Python data pipeline architecture and test the SQL ingestion engine locally, please follow these steps. 
+
+**Step 1: Clone the repository**
+`git clone https://github.com/YOUR_GITHUB_USERNAME/fx-tca-engine.git`
+`cd fx-tca-engine`
+
+**Step 2: Activate the environment and install dependencies**
+`python3 -m venv venv`
+`source venv/bin/activate`
+`pip install -r requirements.txt`
+
+**Step 3: Execute the automated data pipeline**
+The following commands will generate 10,000 mock trade execution logs and populate the local SQLite schema to test the backend logic.
+`python generate_data.py`
+`python tca_engine.py`
+
+**Step 4: Launch the analytics interface**
+`streamlit run app.py`
